@@ -72,14 +72,19 @@ Configures the app as `project` for Django to recognize.
 
 ---
 
-## Usage
+## How to Run
 
-### 1. Install dependencies:
-```bash
-pip install -r requirements.txt
-pip install django pillow
-
-### 1. Install dependencies:
-```bash
-pip install -r requirements.txt
-pip install django pillow
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   pip install django pillow
+2. Apply Migrations
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+3. Create a superuser for the admin interface:
+   ```bash
+   python manage.py createsuperuser
+4. Run the server
+   ```bash
+   python manage.py runserver
